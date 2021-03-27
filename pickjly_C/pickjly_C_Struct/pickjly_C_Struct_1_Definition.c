@@ -13,7 +13,7 @@ typedef struct {
     int sex;
     int age;
     char *name;
-}human; // 取别名之后，
+}human; // 定义一个类型，
 
 int main() {
     // typedef 是对结构体取了个名字，

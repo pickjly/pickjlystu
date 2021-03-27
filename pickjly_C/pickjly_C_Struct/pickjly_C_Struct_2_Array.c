@@ -26,5 +26,6 @@ struct stu{
 
 int main()
 {
+    printf(" student 1 name is %s\n", students[1].name);
     return 0;
 }
