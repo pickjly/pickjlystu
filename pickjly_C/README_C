@@ -1,1 +1,36 @@
-# 保留学习 `C` 的记录
+.
+├── pickjly_C_Function
+│   ├── pickjly_C_Callback.c
+│   ├── pickjly_C_inline.c
+│   └── pickjly_C_Variable_length_parametric_function.c
+├── pickjly_C_Pointer
+│   ├── pickjly_C_Pointer_array.c
+│   └── pickjly_C_Pointer.c
+├── pickjly_C_PreProcess
+│   ├── pickjly_C_22.c
+│   ├── pickjly_C_condition.c
+│   └── pickjly_C_others.c
+├── pickjly_C_Struct
+│   ├── pickjly_C_Struct_1_Definition.c
+│   ├── pickjly_C_Struct_2_Array.c
+│   └── pickjly_C_Struct_3_Pointer.c
+├── pickjly_C_System
+│   ├── Demo.txt
+│   ├── pickjly_C_FILE_block.c
+│   ├── pickjly_C_file_string.c
+│   ├── pickjly_C_Standard_IO.c
+│   └── pickjly_C_Standard_library_functions.c
+├── pickjly_C_Type_length
+│   ├── a.out
+│   └── pickjly_C_Type_length.c
+├── pickjly_C_Type_Qualification
+│   ├── pickjly_C_Const.c
+│   ├── pickjly_C_restrict.c
+│   ├── pickjly_C_Static.c
+│   ├── pickjly_C_Static_help.c
+│   └── pickjly_C_volatile.c
+├── pickjly_C_Variable
+│   └── pickjly_C_register_variable.c
+└── README_C
+
+8 directories, 25 files

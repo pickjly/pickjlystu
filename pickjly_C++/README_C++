@@ -1,0 +1,28 @@
+.
+├── pickjly_C++_Asset_Protection
+│   └── pickjly_C++_Asset_Protection.c
+├── pickjly_C++_Class
+│   ├── pickjly_C++_1_Class_Definition.cpp
+│   ├── pickjly_C++_Class_friend.cpp
+│   └── pickjly_C++_Class_static.cpp
+├── pickjly_C++_Exception
+│   └── pickjly_C++_Exception.cpp
+├── pickjly_C++_Iterator
+│   └── pickjly_C++_Iterator.cpp
+├── pickjly_C++_Namespace
+│   └── pickjly_C++_Namespace.cpp
+├── pickjly_C++_PreProcessor
+│   └── pickjly_C++_PreProcessor.cpp
+├── pickjly_C++_quote
+│   └── pickjly_C++_quote.cpp
+├── pickjly_C++_Reload
+│   ├── pickjly_C++_Reload_Function.cpp
+│   └── pickjly_C++_Reload_Operator.cpp
+├── pickjly_C++_Template
+│   ├── pickjly_C++_Class_Template.cpp
+│   └── pickjly_C++_Function_Template.cpp
+├── pickjly_C++_Vector
+│   └── piickjly_C++_Vector.cpp
+└── README_C++
+
+10 directories, 15 files

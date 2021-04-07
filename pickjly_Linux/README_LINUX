@@ -1,1 +1,23 @@
-# 保留自己学习 `LINUX` 的记录
+.
+├── pickjly_Linux_File
+├── pickjly_Linux_Kernel
+│   └── pickjly_Linux_Kernel_Progress_Management
+├── pickjly_Linux_Memory
+├── pickjly_Linux_Operator
+├── pickjly_Linux_Process
+│   └── pickjly_Linux_Process.c
+├── pickjly_Linux_Pthread
+├── pickjly_Linux_Shell
+│   ├── pickjly_Linux_Operator.sh
+│   ├── pickjly_Linux_Parameters.sh
+│   ├── pickjly_Linux_pipe.sh
+│   ├── pickjly_Linux_Process_control.sh
+│   └── pickjly_Linux_var.sh
+├── pickjly_Linux_Signal
+├── pickjly_Linux_Socket
+│   ├── pickjly_Linux_Socket_tcp_cliient.c
+│   └── pickjly_Linux_Socket_tcp_server.c
+├── pickjly_Linux_Var
+└── README_LINUX
+
+11 directories, 9 files
