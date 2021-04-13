@@ -124,5 +124,5 @@ int main() {
     if (Clearsq(&sq) == 1 ) {
         printf(" sq cleared \n");
     }
-    return 1;
+    return 0;
 }
