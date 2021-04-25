@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// 1  引用必须初始化
+// 2  初始化之后，不可以改变
+// --> 可以看作是指针常量
+//     int* const p = &a;
+//     const &b = a;
+
 // 结构体类型的引用
 typedef struct {
     int x;
@@ -18,8 +24,11 @@ int main(int argc, char **argv) {
     cout << " a is " << a << endl;
     quote = 20;
     cout << " a is " << a << endl;  // 需要让 a 做事情，不需要喊真名，喊小名也行
-    cout << " quote is " << a << endl;  // 需要让 a 做事情，不需要喊真名，喊小名也行
+    cout << " quote is " << quote << endl;  // 需要让 a 做事情，不需要喊真名，喊小名也行
+    cout << " a address is " << &a << endl;
+    cout << " quote address is " << &quote << endl;
 
+    // 结构体类型的引用
     Coor c1;    // 定义一个变量，
     Coor &c = c1;   // 给c1取小名
     c.x = 10;

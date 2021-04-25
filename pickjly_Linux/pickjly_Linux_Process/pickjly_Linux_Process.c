@@ -25,3 +25,8 @@ int main() {
     printf("process %d will continue this print out \n", getpid());
 }
 
+// process 2867 is parent process 
+// child process 2868 will continue this print
+// process 2868 will continue this print out 
+// parent process 2867 will continue this print
+// process 2867 will continue this print out 

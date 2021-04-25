@@ -10,22 +10,19 @@ private:
     int _sex;
 
 public:
-    human() {
-        _name = NULL;
-        _age = 0;
-        _sex = 0;
-        cout << " human()" << endl;
+    human() {   // 
+
     }
 
-    // human(char* name, int age, int sex) {    // 带参数的构造函数，相当于初始化类表来初始化
+    // human(char* name, int age, int sex) {    // 带参数的构造函数，相当于初始化类表来初始化   // 传统的初始化列表方式
     //     strcpy(_name, name);
     //     _age = age;
     //     _sex = sex;
     //     cout << " human()" << endl;
     // }
-    human(char* name, int age, int sex) : _name(name), _age(age), _sex(sex){    // 初始化列表
-        cout << " human()" << endl;
-    }
+    // human(char* name, int age, int sex) : _name(name), _age(age), _sex(sex){    // 初始化列表
+    //     cout << " human()" << endl;
+    // }
 
     human(const human &obj) {    //
         _name = obj._name;

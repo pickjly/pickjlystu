@@ -1,54 +1,12 @@
 .
 ├── pickjly_ARM
-│   ├── ALU.jpg.png
-│   └── pickjly_ARM_CPU.md
 ├── pickjly_C
-│   ├── pickjly_C_Function
-│   ├── pickjly_C_Pointer
-│   ├── pickjly_C_PreProcess
-│   ├── pickjly_C_Struct
-│   ├── pickjly_C_System
-│   ├── pickjly_C_Type_length
-│   ├── pickjly_C_Type_Qualification
-│   ├── pickjly_C_Variable
-│   └── README_C
 ├── pickjly_C++
-│   ├── pickjly_C++_Asset_Protection
-│   ├── pickjly_C++_Class
-│   ├── pickjly_C++_Exception
-│   ├── pickjly_C++_Iterator
-│   ├── pickjly_C++_Namespace
-│   ├── pickjly_C++_PreProcessor
-│   ├── pickjly_C++_quote
-│   ├── pickjly_C++_Reload
-│   ├── pickjly_C++_Template
-│   ├── pickjly_C++_Vector
-│   └── README
 ├── pickjly_Computer_Network
 ├── pickjly_data_struct
-│   ├── pickjly_Binary_tree
-│   ├── pickjly_Complexity
-│   ├── pickjly_Graph
-│   ├── pickjly_LinkList
-│   ├── pickjly_queue
-│   ├── pickjly_Sequence_table
-│   ├── pickjly_Sort
-│   └── pickjly_stack
 ├── pickjly_Git
-│   └── pickjly_Create_repo
 ├── pickjly_Linux
-│   ├── pickjly_Linux_File
-│   ├── pickjly_Linux_Kernel
-│   ├── pickjly_Linux_Memory
-│   ├── pickjly_Linux_Operator
-│   ├── pickjly_Linux_Process
-│   ├── pickjly_Linux_Pthread
-│   ├── pickjly_Linux_Shell
-│   ├── pickjly_Linux_Signal
-│   ├── pickjly_Linux_Socket
-│   ├── pickjly_Linux_Var
-│   └── README_LINUX
 ├── pickjly_x86
 └── README
 
-45 directories, 6 files
+8 directories, 1 file
