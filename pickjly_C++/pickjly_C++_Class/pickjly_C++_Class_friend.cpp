@@ -1,57 +1,90 @@
+/*** 
+ * 
+ *  Author: pickjly
+ *  Date  : 2021-04-25
+ *  Email : 2461789521@qq.com
+ * 
+ * ***/
+
 #include <iostream>
+#include <string>
 using namespace std;
 
-class box {
-private:
-    int _length;
-    int _width;
-    int _height;
+// class Room1;
+// class Room;
+
+
+class Room {
 
 public:
-    void setLength(int length) {    // 在类定义中的定义的函数都是内联函数，即使没有使用 inline 说明符。
-        _length = length;           // 如果想把一个函数定义为内联函数，则需要在函数名前面放置关键字 inline
-    }                               // 如果已定义的函数多于一行，编译器会忽略 inline 限定符。
-    void setWidth(int width) {
-        _width = width;
-    }
-    int getLength() {
-        return _length;
-    }
-    int getgetLength() {
-        return this->getLength();   // 当我们调用成员函数时，实际上是替某个对象调用它。
-    }
 
-    box():_length(0), _width(0), _height(0) {
+    friend class Room1;
 
+    string _Sittingroom;
+    string _Cleanroom;
+
+    friend void confidante(Room &room);
+
+    Room(){
+        room_num = 0;
     }
-
-    ~box() {
+    Room(int num){
+        room_num = num;
+    }
+    Room(string sittingroom, string cleanroom, string bedroom): _Sittingroom(sittingroom), _Cleanroom(cleanroom), _Bedroom(bedroom) {
 
     }
-
-    box(box &b) {
-        _length = b._length;
-        _width = b._width;
-        _height = b._height;
+    void dispRoomNum() {
+        cout << " Room has  " << room_num << " rooms" << endl;
     }
 
-    friend int getWidth(box &);
+private:
+
+    string _Bedroom;
+    int room_num;
+
 };
 
-int getWidth(box &boxn) {
-    return boxn._width;
+class Room1 {
+public:
+
+    Room1() {
+        room_num = 0;
+    }
+
+    Room1(Room *room) {
+        // this->room_num = room->room_num += 1;
+        this->room_num = room->room_num += 1;
+    }
+
+    void dispRoomNum() {
+        cout << " Room1 has  " << room_num << " rooms" << endl;
+    }
+
+private:
+
+    int room_num;
+};
+
+// 全局函数 做友元
+void confidante(Room &room) {
+    cout << " confidante is visiting your _Sittingroom " << room._Sittingroom << endl;
+    cout << " confidante is visiting your Bedroom " << room._Bedroom << endl;
 }
 
-int main(int argc, char **argv) {
+void test01() {
+    Room room1("sittingroom", "cleanroom", "bedroom");
+    confidante(room1);
+}
 
-    box box1;
-    box1.setLength(10);
-    box box2(box1);
-    cout << " box1's length is " << box1.getLength() << endl;
-    cout << " box2's length is " << box2.getLength() << endl;
+void test02() {
+    Room room01(10);
+    room01.dispRoomNum();
+    Room1 room02(&room01);
+    room02.dispRoomNum();
+}
 
-    box1.setWidth(5);
-    cout << " box1's width is " << getWidth(box1) << endl;
-
-    return 0;
+int main() {
+    // test01();
+    test02();
 }

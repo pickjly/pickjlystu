@@ -1,47 +1,89 @@
-// 如果把函数成员声明为静态的，就可以把函数与类的任何特定对象独立开来。静态成员函数即使在类对象不存在的情况下也能被调用，静态函数只要使用类名加范围解析运算符 :: 就可以访问。
-
-// 静态成员函数只能访问静态成员数据、其他静态成员函数和类外部的其他函数。
-
-// 静态成员函数有一个类范围，他们不能访问类的 this 指针。您可以使用静态成员函数来判断类的某些对象是否已被创建。
+/***
+ * 
+ *  Author: pickjly
+ *  Date  : 2021-04-25
+ *  Email : 2461789521@qq.com
+ * 
+ * ***/
 
 #include <iostream>
- 
-using namespace std;
- 
-class Box
-{
-   public:
-      static int objectCount;
-      // 构造函数定义
-      Box(double l=2.0, double b=2.0, double h=2.0)
-      {
-         cout <<"Constructor called." << endl;
-         length = l;
-         breadth = b;
-         height = h;
-         // 每次创建对象时增加 1
-         objectCount++;
-      }
-      double Volume()
-      {
-         return length * breadth * height;
-      }
-   private:
-      double length;     // 长度
-      double breadth;    // 宽度
-      double height;     // 高度
+using namespace  std;
+
+/***
+ * 
+ *  静态成员 ： 静态成员变量 & 静态成员函数
+ *    静态成员变量
+ *       所有对象共享一份数据
+ *       编译阶段分配内存 (全局区 )
+ *       类内声明，类外初始化
+ *    静态成员函数
+ *       所有对象共享的函数
+ *       静态成员函数之可以访问静态变量
+ * 
+ * ***/
+
+class static_test {
+public:
+    int data;
+    static int test;    // 类内声明
+    static void func1() { // 类内声明
+        test = 50;
+        // data = 10;  // error: invalid use of member ‘static_test::data’ in static member function
+        cout << " func1 调用, test is " << test << endl;
+    }
+    static void func2() {    // 类内声明
+        cout << " func2 调用" << endl;
+    }
+private:
+    static int test_error;  // 静态成员函数也有权限访问问题
 };
 
-// 初始化类 Box 的静态成员
-int Box::objectCount = 0;
- 
-int main(void)
-{
-   Box Box1(3.3, 1.2, 1.5);    // 声明 box1
-   Box Box2(8.5, 6.0, 2.0);    // 声明 box2
- 
-   // 输出对象的总数
-   cout << "Total objects: " << Box::objectCount << endl;
- 
-   return 0;
+int static_test::test = 100;
+int static_test::test_error = 100;  // 声明为私有是可以的
+
+int main() {
+    {
+        static_test test01;
+        cout << " test01 : test is " << test01.test << endl;
+
+        static_test test02;
+        test02.test = 200;
+        cout << " test01 : test is " << test01.test << endl;
+        cout << " test02 : test is " << test02.test << endl;
+
+        // test01 : test is 100
+        // test01 : test is 200
+        // test02 : test is 200
+    }
+
+    {
+        // 静态成员函数可以通过两种方式进行访问
+
+        // 通过类访问
+        static_test test03;
+        cout << " test03 : test is " << test03.test << endl;
+
+        // 通过类名访问
+        cout << " static_test is " << static_test::test << endl;
+        // test03 : test is 200
+        // static_test is 200
+
+        // cout << " static_test is " << static_test::test_error << endl; // 可以在类外初始化，但是不可以进行访问
+    }
+    
+    {
+        // 静态成员函数的访问方式有两种
+
+        // 通过对象访问
+        static_test test04;
+        test04.func2();
+
+        // 通过类名访问
+        static_test::func2();
+    }
+     
+    {
+        static_test::func1();
+    }
+
 }

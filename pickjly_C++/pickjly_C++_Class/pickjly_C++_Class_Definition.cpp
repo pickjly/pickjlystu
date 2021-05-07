@@ -1,11 +1,11 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 using namespace std;
 
 class human {   // 类成员可以被定义为 public、private 或 protected。默认情况下是定义为 private。
 
 private:
-    char* _name;
+    string _name;
     int _age;
     int _sex;
 
@@ -20,14 +20,15 @@ public:
     //     _sex = sex;
     //     cout << " human()" << endl;
     // }
-    // human(char* name, int age, int sex) : _name(name), _age(age), _sex(sex){    // 初始化列表
-    //     cout << " human()" << endl;
-    // }
+    human(char* name, int age, int sex) : _name(name), _age(age), _sex(sex){    // 较新的初始化列表
+        // cout << " human()" << endl;
+    }
 
     human(const human &obj) {    //
-        _name = obj._name;
+        // _name = obj._name;
         _age = obj._age;
         _sex = obj._sex;
+        _name = obj._name;
     }
 
     ~human() {
@@ -62,3 +63,4 @@ int main(int argc, char **argv) {
     cout << " human1's age is " << human1.gethumanage() << endl;
     return 0;
 }
+

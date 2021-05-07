@@ -4,7 +4,7 @@ using namespace std;
 // 1  引用必须初始化
 // 2  初始化之后，不可以改变
 // --> 可以看作是指针常量
-//     int* const p = &a;
+//     int* const  p = &a;
 //     const &b = a;
 
 // 结构体类型的引用
