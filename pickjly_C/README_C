@@ -21,7 +21,6 @@
 │   ├── pickjly_C_Standard_IO.c
 │   └── pickjly_C_Standard_library_functions.c
 ├── pickjly_C_Type_length
-│   ├── a.out
 │   └── pickjly_C_Type_length.c
 ├── pickjly_C_Type_Qualification
 │   ├── pickjly_C_Const.c
@@ -33,4 +32,4 @@
 │   └── pickjly_C_register_variable.c
 └── README_C
 
-8 directories, 25 files
+8 directories, 24 files
