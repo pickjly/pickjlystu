@@ -1,3 +1,13 @@
+/***
+ * Author : pickjly
+ * Email  : 2461789521@qq.com
+ * Date   : 2021-05-11
+ * Time   : 23:00
+ * File   : @pickjly_C_inline.c
+ * Content:
+ *      内联函数
+ * ***/
+
 #include <stdio.h>
 
 // # inline 函数 #

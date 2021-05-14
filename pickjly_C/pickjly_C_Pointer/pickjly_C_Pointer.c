@@ -1,3 +1,13 @@
+/***
+ * Author : pickjly
+ * Email  : 2461789521@qq.com
+ * Date   : 2021-05-11
+ * Time   : 23:00
+ * File   : @pickjly_C_Pointer.c
+ * Content:
+ *      指针
+ * ***/
+
 #include <stdio.h>
 
 // 指针是一个变量，其值为另一个变量的地

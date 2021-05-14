@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# /***
+#  * Author : pickjly
+#  * Email  : 2461789521@qq.com
+#  * Date   : 2021-05-11
+#  * Time   : 23:00
+#  * File   : @pickjly_C_Callback.c
+#  * Content:
+#  *      运算符
+#  * ***/
+
 :<<@
 Shell 和其他编程语言一样，支持多种运算符，包括：
 

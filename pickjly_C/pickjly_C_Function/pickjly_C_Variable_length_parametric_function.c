@@ -1,3 +1,13 @@
+/***
+ * Author : pickjly
+ * Email  : 2461789521@qq.com
+ * Date   : 2021-05-11
+ * Time   : 23:00
+ * File   : @pickjly_C_Variable_length_parametric_function.c
+ * Content:
+ *      可变长参数函数
+ * ***/
+
 #include <stdio.h>
 #include <stdarg.h>
 
