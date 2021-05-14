@@ -87,7 +87,9 @@ int getNodedepth(_Node* node) {
     } else {
         int length = 0;
         length ++;
-        length += getNodedepth();
+        if ( node->leftchild != NULL || node->rightchild != NULL) {
+            return length+=getNodedepth();
+        }
     }
 }
 

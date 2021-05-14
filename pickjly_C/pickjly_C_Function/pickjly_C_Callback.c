@@ -1,3 +1,13 @@
+/***
+ * Author : pickjly
+ * Email  : 2461789521@qq.com
+ * Date   : 2021-05-11
+ * Time   : 23:00
+ * File   : @pickjly_C_Callback.c
+ * Content:
+ *      回调函数
+ * ***/
+
 #include <stdio.h>
 
 int (*pfunc)(int data); // 直接声明函数指针
