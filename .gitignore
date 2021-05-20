@@ -1,3 +1,11 @@
 .vs
+*/.vs
+*/*/.vs
 */*.out
 */*/*.out
+.vscode
+*/.vscode
+*/*/.vscode
+a.exe
+*/a.exe
+*/*/a.exe
