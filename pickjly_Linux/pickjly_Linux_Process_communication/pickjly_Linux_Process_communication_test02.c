@@ -48,7 +48,7 @@
 #include <errno.h>
 #include <signal.h>
 
-#define FIFONAME "./.fifo"
+#define FIFONAME "./.fifo"  // 有名管道
 
 void print_err(char *s) {
     perror(s);
@@ -68,7 +68,7 @@ void test02() {
 
     signal(SIGINT, signal_func);
 
-    if ( (ret = mkfifo(FIFONAME, 0664)) == -1 && errno != EEXIST) {
+    if ( (ret = mkfifo(FIFONAME, 0664)) == -1 && errno != EEXIST) { // 创建有名管道
         print_err("创建管道错误");
     }
     if ( (fd = open(FIFONAME, O_RDONLY)) == -1 ) {
@@ -81,7 +81,7 @@ void test02() {
         printf("%s", buffer);
     }
 }
-
+e
 int main (void) {
 
     test02();

@@ -10,7 +10,9 @@ MCU structure
 1 CPU
     contains:
         - ALU：             Arithmetic logic unit     只负责运算和逻辑运算（必备）
-            ![image](./ALU.jpg.png)
+
+![image](./img/ALU.jpg.png)
+
             -- Two Input data   输入操作数
             -- Instruction      操作指令
             -- result           保留操作结果
